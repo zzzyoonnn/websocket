@@ -18,6 +18,6 @@ public class WebSocketEventListener {
     public void handleWebSocketDisconnectListener(
             SessionDisconnectEvent event
     ) {
-        // TODO -- WebSocket 연결 해제 시 수행할 작업 구현
+        // WebSocket 연결 해제 시 수행할 작업 구현
     }
 }
