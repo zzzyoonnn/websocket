@@ -3,6 +3,7 @@ package com.websocket.chat.config;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.event.EventListener;
+import org.springframework.messaging.simp.stomp.StompHeaderAccessor;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.socket.messaging.SessionDisconnectEvent;
@@ -18,6 +19,6 @@ public class WebSocketEventListener {
     public void handleWebSocketDisconnectListener(
             SessionDisconnectEvent event
     ) {
-        // WebSocket 연결 해제 시 수행할 작업 구현
+        StompHeaderAccessor headerAccessor = StompHeaderAccessor.wrap(event.getMessage());
     }
 }
