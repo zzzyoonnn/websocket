@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Spring boot Websocket Chat Application</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <title>Spring Boot WebSocket Chat Application</title>
+    <link rel="stylesheet" href="/css/main.css" />
 </head>
 <body>
 
@@ -21,10 +21,11 @@
     </div>
 </div>
 
+
 <div id="chat-page" class="hidden">
     <div class="chat-container">
         <div class="chat-header">
-            <h2>Spring WebSocket Chat Demo</h2>
+            <h2>Spring WebSocket Chat Demo - By Alibou</h2>
         </div>
         <div class="connecting">
             연결 중...
@@ -36,7 +37,7 @@
             <div class="form-group">
                 <div class="input-group clearfix">
                     <input type="text" id="message" placeholder="Type a message..." autocomplete="off" class="form-control"/>
-                    <button type="submit" class="primary">전송</button>
+                    <button type="submit" class="primary">Send</button>
                 </div>
             </div>
         </form>
@@ -46,6 +47,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
 <script src="/js/main.js"></script>
-
 </body>
 </html>

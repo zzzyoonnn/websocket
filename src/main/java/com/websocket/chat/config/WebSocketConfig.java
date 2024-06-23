@@ -15,9 +15,9 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {      
     // 클라이언트가 WebSocket에 연결할 때 사용할 엔드포인트를 설정
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        // "/chat" 엔드포인트를 등록하고 SockJS를 사용하도록 설정
+        // "/ws" 엔드포인트를 등록하고 SockJS를 사용하도록 설정
         // SockJS : WebSocket을 지원하지 않는 브라우저에서 대체 전송 프로토콜을 사용할 수 있게 함
-        registry.addEndpoint("/chat").withSockJS();
+        registry.addEndpoint("/ws").withSockJS();
     }
 
     // 메시지 브로커를 구성하는 메서드
